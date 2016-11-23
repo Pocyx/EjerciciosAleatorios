@@ -76,4 +76,25 @@ public class Dados {
         System.out.println("PUNTOS--> "+puntos);
         return puntos;
     }
+    
+    public static void puntuacion3(){
+        pun = new int[2];
+        pun[0]=(int)(generador.nextInt(13) + 1);
+        pun[1]=(int)(generador.nextInt(4) + 1);
+        String figura = "";
+        if (pun[1] == 1){
+            figura = "J";
+        }else if(pun[1] == 2){
+            figura = "Q";
+        }else if(pun[1] == 3){
+            figura = "K";
+        }else if (pun[1] == 4){
+            figura = "As";
+        }
+        
+        
+        System.out.println("Tirada--> "+pun[0]+" de "+figura);
+        
+        //return puntos;
+    }
 }
